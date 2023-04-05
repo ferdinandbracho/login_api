@@ -1,6 +1,7 @@
-import config
-from api.api_v1 import api
 from fastapi import FastAPI
+
+from app import config
+from app.api.api_v1 import api
 
 # Init fastAPI APP
 app = FastAPI(

@@ -1,8 +1,9 @@
 
-from db.db import not_real_db
 from fastapi import APIRouter, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
-from utils import UserInDB, decode_token, token_generator
+
+from app.db.db import not_real_db
+from app.utils import UserInDB, decode_token, token_generator
 
 # Init router
 router = APIRouter()
